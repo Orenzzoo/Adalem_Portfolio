@@ -1,0 +1,343 @@
+body {
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow-y: auto; /* Ensure scrolling when content overflows */
+    margin: 0; /* Remove default body margin */
+}
+
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent; /* Make navbar background transparent */
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex; /* Use flexbox to align links horizontally */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+/* Navbar link styles */
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect on individual links */
+}
+
+/* Hover effect on individual links */
+.navbar a:hover {
+    transform: translateY(-5px); /* Only move the hovered link */
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3); /* Add shadow on hover */
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+    z-index: 1;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container2 {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row; /* Stack text and images vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.form-container3 {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container4 {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    width: 700px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container3 img {
+    margin-right: 30px; /* Add space between image and text */
+    align-self: flex-start; /* Align items to the top */
+    margin-top: 20px;
+}
+
+.form-container3 p {
+    margin-top: 0; /* Ensure the text starts from the top */
+}
+
+.form-container3 h1 {
+    margin: 0; /* Ensure the text starts from the top */
+    text-align: center;
+    width: 100%;
+}
+
+
+.form-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+}
+
+.form-container2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+}
+
+.form-container3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+}
+
+.form-container4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+}
+
+.certificates-container {
+    background-color: #1e1e1e;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.certificates-container h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.certificates-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificates-gallery img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.certificates-gallery img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro {
+    width: 60%;
+    text-align: left;
+}
+
+
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+input {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    width: 370px;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+
+textarea {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    height: 300px;
+    width: 370px; /* Make the width the same as the other input fields */
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease-in-out;
+    resize: none; 
+}
+
+textarea::placeholder {
+    color: #aaa;
+}
+
+textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #f8f8f8;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.peeking-cat {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    z-index: 0;
+}
+
+.my_works {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.my_skills {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.aligned-text {
+    text-align: justify;
+    margin-left: 0;
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    font-family: sans-serif;
+}
+
+.profile-picture {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Ensure the image remains square */
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensure the image is cropped nicely */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+
+.skill-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.skill-box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3); 
+    background-color: #2c2c2c; 
+}
+
+.skill-box:active {
+    transform: translateY(0px); 
+}
